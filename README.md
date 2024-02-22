@@ -23,7 +23,9 @@
 * After that we need to run 'update-database' command for creating the database instance to the server
 * In the Creating Database part after modifying the 'ApplicationDbContext' we need to run following two command in the package manager console for displaying the applying the changes in the database
 ```
-    add-migration AddEmployeeTableToDb
+    add-migration suitableMigrationName
     update-database
 ```
 - If no errors shows we will display the tables in the Database
+
+* In the Seed Employee Table after doing modification in the 'ApplicationDbContext' we need to run the above two commands in package manager console
