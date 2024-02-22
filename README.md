@@ -10,3 +10,14 @@
  02. Microsoft.EntityFrameworkCore.Tools  - Version 6.0.27
  03. Microsoft.EntityFrameworkCore.SqlServer - Version 6.0.27
 ```
+
+---
+* Connection String Format for appsettings.json file
+```
+"ConnectionStrings": {
+    "DefaultConnection": "Server=server-name;Database=database-name;Trusted_Connection=True;TrustServerCertificate=True"
+  }
+```
+
+* Then we need to setup ApplicationDbContext and program.cs file for properly setting up ApplicationDbContext
+* After that we need to run 'update-database' command for creating the database instance to the server
