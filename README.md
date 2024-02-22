@@ -21,3 +21,9 @@
 
 * Then we need to setup ApplicationDbContext and program.cs file for properly setting up ApplicationDbContext
 * After that we need to run 'update-database' command for creating the database instance to the server
+* In the Creating Database part after modifying the 'ApplicationDbContext' we need to run following two command in the package manager console for displaying the applying the changes in the database
+```
+    add-migration AddEmployeeTableToDb
+    update-database
+```
+- If no errors shows we will display the tables in the Database
